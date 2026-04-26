@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works – Lottery Predictor | UK Lotto Frequency Analysis Explained</title>
+<meta name="description" content="Understand how our UK Lotto predictor works — frequency analysis, the five strategies, and what the historical data really means for your number picks.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4567886091860022" crossorigin="anonymous"></script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --gold: #C9A84C; --gold-light: #E8C97A; --gold-dim: #8B6F32;
+    --cream: #F5F0E8; --ink: #1A1410; --ink-mid: #4A3F30; --ink-soft: #7A6F60;
+    --surface: #FDFAF5; --surface-2: #F0EAE0;
+    --border: rgba(180,150,80,0.25);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: var(--ink); color: var(--cream);
+    min-height: 100vh; overflow-x: hidden; line-height: 1.7;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,76,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(201,168,76,0.06) 0%, transparent 60%),
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(201,168,76,0.015) 40px, rgba(201,168,76,0.015) 41px),
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(201,168,76,0.015) 40px, rgba(201,168,76,0.015) 41px);
+    pointer-events: none; z-index: 0;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 2rem 5rem; }
+
+  /* NAV */
+  nav.site-nav {
+    position: relative; z-index: 10;
+    border-bottom: 1px solid var(--border);
+    background: rgba(26,20,16,0.95);
+    backdrop-filter: blur(8px);
+    padding: 0 2rem;
+  }
+  .nav-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+  .nav-logo { font-family: Georgia, serif; font-size: 1.1rem; font-weight: 700; color: var(--gold-light); text-decoration: none; padding: 1rem 0; margin-right: auto; letter-spacing: 0.02em; }
+  .nav-logo span { color: var(--cream); }
+  .nav-links { display: flex; gap: 0; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; font-size: 0.85rem; padding: 1rem 1rem; transition: color 0.2s; border-bottom: 2px solid transparent; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold-light); border-bottom-color: var(--gold); }
+
+  /* HERO */
+  .page-hero { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+  .page-hero h1 { font-family: Georgia, serif; font-size: clamp(1.8rem,4vw,2.8rem); color: var(--gold-light); font-weight: 700; margin-bottom: 0.6rem; line-height: 1.15; }
+  .page-hero p { font-size: 1rem; color: var(--ink-soft); max-width: 620px; }
+
+  /* PROSE */
+  .prose h2 { font-family: Georgia, serif; font-size: 1.45rem; color: var(--gold); margin: 2.2rem 0 0.8rem; font-weight: 700; }
+  .prose h3 { font-family: Georgia, serif; font-size: 1.15rem; color: var(--gold-light); margin: 1.6rem 0 0.5rem; font-weight: 700; }
+  .prose p { font-size: 0.96rem; color: #c8bfaf; margin-bottom: 1.1rem; }
+  .prose ul, .prose ol { margin: 0.5rem 0 1.1rem 1.5rem; }
+  .prose li { font-size: 0.96rem; color: #c8bfaf; margin-bottom: 0.4rem; }
+  .prose strong { color: var(--cream); font-weight: 600; }
+  .prose a { color: var(--gold-dim); } .prose a:hover { color: var(--gold); }
+  .prose .callout { background: rgba(201,168,76,0.07); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+  .prose .callout p { margin: 0; }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .card h3 { font-family: Georgia, serif; font-size: 1.05rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .card p { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+  .card .icon { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+
+  /* BLOG LIST */
+  .article-list { display: flex; flex-direction: column; gap: 1.25rem; margin: 1.5rem 0; }
+  .article-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; text-decoration: none; display: block; transition: border-color 0.2s, background 0.2s; }
+  .article-card:hover { border-color: var(--gold-dim); background: rgba(255,255,255,0.05); }
+  .article-card .tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-dim); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; margin-bottom: 0.6rem; }
+  .article-card h3 { font-family: Georgia, serif; font-size: 1.15rem; color: var(--gold-light); margin-bottom: 0.4rem; }
+  .article-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+  .article-card .meta { font-size: 0.75rem; color: var(--ink-soft); margin-top: 0.6rem; }
+
+  /* CTA */
+  .cta-box { background: rgba(201,168,76,0.07); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; margin: 2.5rem 0; }
+  .cta-box h3 { font-family: Georgia, serif; font-size: 1.3rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .cta-box p { font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 1.2rem; }
+  .cta-btn { display: inline-block; background: var(--gold); color: var(--ink); font-weight: 600; font-size: 0.9rem; padding: 0.65rem 1.8rem; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+  .cta-btn:hover { background: var(--gold-light); }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.9rem; }
+  th { background: rgba(201,168,76,0.12); color: var(--gold-light); font-weight: 600; text-align: left; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--border); }
+  td { padding: 0.55rem 0.9rem; border-bottom: 1px solid rgba(180,150,80,0.1); color: #c8bfaf; }
+  tr:last-child td { border-bottom: none; }
+
+  /* FOOTER */
+  footer.site-footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; text-align: center; font-size: 0.78rem; color: var(--ink-soft); margin-top: 2rem; }
+  footer.site-footer a { color: var(--gold-dim); text-decoration: none; } footer.site-footer a:hover { color: var(--gold); }
+
+  /* AD SLOT */
+  .ad-slot { text-align: center; margin: 2rem 0; min-height: 90px; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">🎱 Lottery <span>Predictor</span></a>
+    <div class="nav-links">
+      <a href="index.html" >Predictor</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="blog.html" >Articles</a>
+      <a href="about.html" >About</a>
+      <a href="privacy.html" >Privacy</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+
+<div class="page-hero">
+  <h1>How It Works</h1>
+  <p>A plain-English explanation of frequency analysis, the five strategies, and what the data really tells us.</p>
+</div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-4567886091860022"
+         data-ad-slot="AUTO" data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+<div class="prose">
+
+<h2>Step 1 — Collecting the draw history</h2>
+<p>The starting point is raw data: every UK National Lottery Lotto draw since October 2015, when the ball pool was expanded from 49 to 59 numbers. We use the current format only — comparing data from the old 1–49 format with the new 1–59 format would skew the results, so the analysis starts fresh from the format change.</p>
+
+<p>From 1,099 draws, we record every number that appeared. That gives us a frequency count for each of the 59 balls — how many times each has been drawn out of a maximum possible 1,099.</p>
+
+<h2>Step 2 — Building the frequency table</h2>
+<p>With 1,099 draws and 6 balls per draw, there are <strong>6,594 total ball appearances</strong> across the dataset. If every ball appeared equally often, each would appear approximately <strong>111.8 times</strong> (6,594 ÷ 59). In reality, the most-drawn ball (42) has appeared 153 times, and the least-drawn (26) has appeared 116 times.</p>
+
+<table>
+  <tr><th>Category</th><th>Numbers</th><th>Typical draw count</th></tr>
+  <tr><td>🔥 Hot (top 15%)</td><td>42, 38, 54, 37, 39, 52, 58, 8, 36</td><td>143–153</td></tr>
+  <tr><td>🟡 Warm (top 40%)</td><td>20, 11, 27, 45, 59, 41, 31, 34...</td><td>135–142</td></tr>
+  <tr><td>🟢 Mid frequency</td><td>Middle third of all numbers</td><td>124–134</td></tr>
+  <tr><td>🔵 Overdue (bottom 25%)</td><td>26, 21, 25, 55, 44, 35, 30...</td><td>116–122</td></tr>
+</table>
+
+<h2>Step 3 — The five strategies explained</h2>
+
+<h3>🔥 Hot Numbers Only</h3>
+<p>All six numbers are selected at random from the top 20 most-drawn balls. The reasoning is simple frequency momentum — these numbers have appeared most often in the historical data. Critics argue that past frequency has no bearing on future draws in a certified random system. Supporters argue that if there were any subtle mechanical bias in the draw (however small), hot numbers would reflect it.</p>
+
+<h3>🧊 Overdue Numbers Only</h3>
+<p>All six numbers come from the 20 least-drawn balls. This is the "gambler's fallacy" strategy — the belief that a number that hasn't appeared recently is "due" to appear. Statistically, this is not how random systems work. However, it does produce a set of numbers that are less commonly chosen by other players, which can be an advantage: if these numbers do come up, you're less likely to share the jackpot.</p>
+
+<h3>⚖️ Balanced Blend</h3>
+<p>This strategy picks 3 numbers from the hot pool, 2 from mid-frequency balls, and 1 from the overdue pool. It is the most statistically balanced approach — spreading your selection across the full frequency spectrum rather than concentrating in one zone. Many experienced players prefer this method for its diversity.</p>
+
+<h3>📊 Frequency Weighted</h3>
+<p>Every ball from 1 to 59 is eligible, but the probability of selection is proportional to its historical frequency. A ball drawn 153 times has a higher chance of being selected than a ball drawn 116 times. This doesn't eliminate any ball from consideration — it simply reflects the historical distribution in the selection process.</p>
+
+<h3>🎲 Pure Random</h3>
+<p>Every ball has an identical 1-in-59 chance of being selected for each position. This mirrors the actual lottery draw machine. It is the only strategy that makes no assumptions based on historical data, and is the mathematically "correct" reflection of how the game works.</p>
+
+<h2>Does any of this actually work?</h2>
+<p>This is the honest answer: <strong>no strategy can improve your odds of winning the jackpot</strong>. The UK Lotto uses certified, audited random draw machines. The odds of matching all six numbers are 1 in 45,057,474 — regardless of which numbers you choose.</p>
+
+<div class="callout"><p><strong>Key principle:</strong> Each draw is entirely independent. A ball that appeared last week has exactly the same probability of appearing this week as one that hasn't appeared for three months. This is the fundamental nature of random processes.</p></div>
+
+<p>What frequency analysis <em>can</em> do is make number selection more engaging and give you a starting point beyond gut feeling. Some players also use it for the jackpot-sharing benefit: choosing less popular number combinations (like very high numbers, or numbers outside common "lucky" choices like 7, 11, 21) means that if you do win, you're less likely to share the prize with another winner.</p>
+
+<h2>How to use the tool</h2>
+<ol>
+  <li>Go to the <a href="index.html">Predictor page</a></li>
+  <li>Choose your preferred strategy from the dropdown</li>
+  <li>Press <strong>Generate Numbers</strong></li>
+  <li>Your six numbers appear, colour-coded by their frequency heat</li>
+  <li>Generate as many sets as you like — your history is saved during the session</li>
+</ol>
+
+</div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-4567886091860022"
+         data-ad-slot="AUTO" data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+<div class="cta-box">
+  <h3>Try the predictor now</h3>
+  <p>Generate your numbers using real data from 1,099 UK Lotto draws.</p>
+  <a class="cta-btn" href="index.html">Open the Predictor →</a>
+</div>
+
+</div>
+<footer class="site-footer">
+  <p>&copy; 2026 Lottery Predictor · <a href="privacy.html">Privacy Policy</a> · <a href="about.html">About</a> · For entertainment only · <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a></p>
+</footer>
+</body>
+</html>

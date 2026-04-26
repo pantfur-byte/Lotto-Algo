@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – Lottery Predictor | UK National Lottery Number Analysis</title>
+<meta name="description" content="Learn about Lottery Predictor — a free tool analysing 1,099 UK Lotto draws to help you pick numbers using five statistical strategies.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4567886091860022" crossorigin="anonymous"></script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --gold: #C9A84C; --gold-light: #E8C97A; --gold-dim: #8B6F32;
+    --cream: #F5F0E8; --ink: #1A1410; --ink-mid: #4A3F30; --ink-soft: #7A6F60;
+    --surface: #FDFAF5; --surface-2: #F0EAE0;
+    --border: rgba(180,150,80,0.25);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: var(--ink); color: var(--cream);
+    min-height: 100vh; overflow-x: hidden; line-height: 1.7;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,76,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(201,168,76,0.06) 0%, transparent 60%),
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(201,168,76,0.015) 40px, rgba(201,168,76,0.015) 41px),
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(201,168,76,0.015) 40px, rgba(201,168,76,0.015) 41px);
+    pointer-events: none; z-index: 0;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 2rem 5rem; }
+
+  /* NAV */
+  nav.site-nav {
+    position: relative; z-index: 10;
+    border-bottom: 1px solid var(--border);
+    background: rgba(26,20,16,0.95);
+    backdrop-filter: blur(8px);
+    padding: 0 2rem;
+  }
+  .nav-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+  .nav-logo { font-family: Georgia, serif; font-size: 1.1rem; font-weight: 700; color: var(--gold-light); text-decoration: none; padding: 1rem 0; margin-right: auto; letter-spacing: 0.02em; }
+  .nav-logo span { color: var(--cream); }
+  .nav-links { display: flex; gap: 0; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; font-size: 0.85rem; padding: 1rem 1rem; transition: color 0.2s; border-bottom: 2px solid transparent; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold-light); border-bottom-color: var(--gold); }
+
+  /* HERO */
+  .page-hero { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+  .page-hero h1 { font-family: Georgia, serif; font-size: clamp(1.8rem,4vw,2.8rem); color: var(--gold-light); font-weight: 700; margin-bottom: 0.6rem; line-height: 1.15; }
+  .page-hero p { font-size: 1rem; color: var(--ink-soft); max-width: 620px; }
+
+  /* PROSE */
+  .prose h2 { font-family: Georgia, serif; font-size: 1.45rem; color: var(--gold); margin: 2.2rem 0 0.8rem; font-weight: 700; }
+  .prose h3 { font-family: Georgia, serif; font-size: 1.15rem; color: var(--gold-light); margin: 1.6rem 0 0.5rem; font-weight: 700; }
+  .prose p { font-size: 0.96rem; color: #c8bfaf; margin-bottom: 1.1rem; }
+  .prose ul, .prose ol { margin: 0.5rem 0 1.1rem 1.5rem; }
+  .prose li { font-size: 0.96rem; color: #c8bfaf; margin-bottom: 0.4rem; }
+  .prose strong { color: var(--cream); font-weight: 600; }
+  .prose a { color: var(--gold-dim); } .prose a:hover { color: var(--gold); }
+  .prose .callout { background: rgba(201,168,76,0.07); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+  .prose .callout p { margin: 0; }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .card h3 { font-family: Georgia, serif; font-size: 1.05rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .card p { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+  .card .icon { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+
+  /* BLOG LIST */
+  .article-list { display: flex; flex-direction: column; gap: 1.25rem; margin: 1.5rem 0; }
+  .article-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; text-decoration: none; display: block; transition: border-color 0.2s, background 0.2s; }
+  .article-card:hover { border-color: var(--gold-dim); background: rgba(255,255,255,0.05); }
+  .article-card .tag { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-dim); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; margin-bottom: 0.6rem; }
+  .article-card h3 { font-family: Georgia, serif; font-size: 1.15rem; color: var(--gold-light); margin-bottom: 0.4rem; }
+  .article-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+  .article-card .meta { font-size: 0.75rem; color: var(--ink-soft); margin-top: 0.6rem; }
+
+  /* CTA */
+  .cta-box { background: rgba(201,168,76,0.07); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; margin: 2.5rem 0; }
+  .cta-box h3 { font-family: Georgia, serif; font-size: 1.3rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .cta-box p { font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 1.2rem; }
+  .cta-btn { display: inline-block; background: var(--gold); color: var(--ink); font-weight: 600; font-size: 0.9rem; padding: 0.65rem 1.8rem; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+  .cta-btn:hover { background: var(--gold-light); }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.9rem; }
+  th { background: rgba(201,168,76,0.12); color: var(--gold-light); font-weight: 600; text-align: left; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--border); }
+  td { padding: 0.55rem 0.9rem; border-bottom: 1px solid rgba(180,150,80,0.1); color: #c8bfaf; }
+  tr:last-child td { border-bottom: none; }
+
+  /* FOOTER */
+  footer.site-footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; text-align: center; font-size: 0.78rem; color: var(--ink-soft); margin-top: 2rem; }
+  footer.site-footer a { color: var(--gold-dim); text-decoration: none; } footer.site-footer a:hover { color: var(--gold); }
+
+  /* AD SLOT */
+  .ad-slot { text-align: center; margin: 2rem 0; min-height: 90px; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">🎱 Lottery <span>Predictor</span></a>
+    <div class="nav-links">
+      <a href="index.html" >Predictor</a>
+      <a href="how-it-works.html" >How It Works</a>
+      <a href="blog.html" >Articles</a>
+      <a href="about.html" class="active">About</a>
+      <a href="privacy.html" >Privacy</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+
+<div class="page-hero">
+  <h1>About Lottery Predictor</h1>
+  <p>A free, data-driven tool built for UK Lotto players who want to make more informed number choices.</p>
+</div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-4567886091860022"
+         data-ad-slot="AUTO" data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+<div class="prose">
+
+<h2>What is Lottery Predictor?</h2>
+<p>Lottery Predictor is a free online tool that analyses over a decade of UK National Lottery Lotto draw results to identify number frequency patterns. Rather than picking numbers at random, our tool gives you five distinct strategies based on real historical data — from hot numbers that have appeared most often, to overdue numbers that statistically may be due a run.</p>
+
+<p>The site was built out of a genuine curiosity: do certain numbers appear more frequently than others in the Lotto draw? The answer, based on over 1,099 draws since October 2015, is that some numbers do appear noticeably more — or less — often than the mathematical average. Whether that has any predictive power is a philosophical debate, but the data itself is fascinating.</p>
+
+<h2>What data does it use?</h2>
+<p>Our predictor is based on every UK National Lottery Lotto draw from <strong>October 2015 to April 2026</strong> — covering the current 1–59 ball pool format introduced when Camelot updated the game. That gives us <strong>1,099 draws</strong> and nearly <strong>6,600 individual ball appearances</strong> to analyse.</p>
+
+<div class="callout"><p>The UK Lotto draw takes place every <strong>Wednesday and Saturday</strong>. Six balls are drawn from a pool of 59. Players match as many as possible to win prizes, with the jackpot for matching all six.</p></div>
+
+<h2>The five strategies</h2>
+<div class="card-grid">
+  <div class="card"><span class="icon">🔥</span><h3>Hot Numbers</h3><p>Picks from the 20 most-drawn balls in the dataset. Based on frequency momentum.</p></div>
+  <div class="card"><span class="icon">🧊</span><h3>Overdue Numbers</h3><p>Picks from the 20 least-drawn balls. The logic: statistically, they may be due to appear.</p></div>
+  <div class="card"><span class="icon">⚖️</span><h3>Balanced Blend</h3><p>3 hot + 2 mid-frequency + 1 overdue. A spread across the full frequency spectrum.</p></div>
+  <div class="card"><span class="icon">📊</span><h3>Frequency Weighted</h3><p>All 59 balls enter the draw, weighted by how often they've appeared historically.</p></div>
+  <div class="card"><span class="icon">🎲</span><h3>Pure Random</h3><p>No weighting. Equal probability for every ball — just like the draw machine itself.</p></div>
+</div>
+
+<h2>Is this guaranteed to win?</h2>
+<p>No — and we want to be completely transparent about that. The National Lottery uses certified random draw machines. Each draw is entirely independent of every previous draw. A ball that has appeared 153 times has exactly the same probability of appearing next week as a ball that has appeared 116 times.</p>
+
+<p>What our tool does is present historical patterns in an accessible way. Many players find it more satisfying to choose numbers with some data behind them, even knowing that the randomness of the draw means no system can guarantee a win. Think of it as an informed starting point rather than a prediction.</p>
+
+<h2>Who built this?</h2>
+<p>Lottery Predictor is an independent project, not affiliated with Camelot, the National Lottery, or any official lottery body. It is provided free of charge, supported by advertising.</p>
+
+<h2>Responsible gambling</h2>
+<p>The National Lottery is a game of chance. Please only spend what you can afford, and never chase losses. If you or someone you know may have a gambling problem, free confidential support is available:</p>
+<ul>
+  <li><strong>National Gambling Helpline:</strong> 0808 8020 133 (free, 24/7)</li>
+  <li><strong>BeGambleAware:</strong> <a href="https://www.begambleaware.org" target="_blank" rel="noopener">www.begambleaware.org</a></li>
+  <li><strong>GamCare:</strong> <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener">www.gamcare.org.uk</a></li>
+</ul>
+
+</div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-4567886091860022"
+         data-ad-slot="AUTO" data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+<div class="cta-box">
+  <h3>Ready to generate your numbers?</h3>
+  <p>Use our free predictor tool based on 1,099 real UK Lotto draws.</p>
+  <a class="cta-btn" href="index.html">Go to the Predictor →</a>
+</div>
+
+</div>
+<footer class="site-footer">
+  <p>&copy; 2026 Lottery Predictor · <a href="privacy.html">Privacy Policy</a> · <a href="about.html">About</a> · For entertainment only · <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a></p>
+</footer>
+</body>
+</html>

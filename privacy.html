@@ -120,12 +120,33 @@
 
   footer a { color: var(--gold-dim); text-decoration: none; }
   footer a:hover { color: var(--gold); }
+
+  nav.site-nav { position:relative; z-index:10; border-bottom:1px solid rgba(180,150,80,0.25); background:rgba(26,20,16,0.97); padding:0 2rem; }
+  .nav-inner { max-width:860px; margin:0 auto; display:flex; align-items:center; }
+  .nav-logo { font-family:Georgia,serif; font-size:1.05rem; font-weight:700; color:#E8C97A; text-decoration:none; padding:1rem 0; margin-right:auto; }
+  .nav-logo span { color:#F5F0E8; }
+  .nav-links { display:flex; }
+  .nav-links a { color:#7A6F60; text-decoration:none; font-size:0.82rem; padding:1rem 0.9rem; transition:color 0.2s; border-bottom:2px solid transparent; }
+  .nav-links a:hover,.nav-links a.active { color:#E8C97A; border-bottom-color:#C9A84C; }
+
 </style>
 </head>
 <body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">🎱 Lottery <span>Predictor</span></a>
+    <div class="nav-links">
+      <a href="index.html">Predictor</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="blog.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html" class="active">Privacy</a>
+    </div>
+  </div>
+</nav>
 <div class="wrap">
 
-  <nav><a href="index.html">← Back to UK Lotto Predictor</a></nav>
+  <nav></nav>
 
   <h1>Privacy Policy</h1>
   <p class="last-updated">Last updated: 25 April 2026</p>
